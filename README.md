@@ -29,12 +29,28 @@ A Node.js and Express REST API for a music platform with separate access for use
 - A MongoDB connection URI
 - An ImageKit private key
 
-## Project Structure
-src/
-├── controllers/   # Authentication and music request handlers
-├── db/            # MongoDB connection
-├── middlewares/   # Role and token checks
-├── models/        # User, music, and album schemas
-├── routes/        # API route definitions
-└── services/      # ImageKit upload service
-server.js          # Loads environment variables and starts the server
+Role-based-authorization/
+├── src/
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   └── music.controller.js
+│   ├── db/
+│   │   └── db.js
+│   ├── middlewares/
+│   │   └── auth.middleware.js
+│   ├── models/
+│   │   ├── album.model.js
+│   │   ├── music.model.js
+│   │   └── user.model.js
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   └── music.routes.js
+│   ├── services/
+│   │   └── storage.service.js
+│   └── app.js
+├── .env.example
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── server.js
