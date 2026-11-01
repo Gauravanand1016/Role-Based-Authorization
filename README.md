@@ -29,6 +29,7 @@ A Node.js and Express REST API for a music platform with separate access for use
 - A MongoDB connection URI
 - An ImageKit private key
 
+```text
 Role-based-authorization/
 ├── src/
 │   ├── controllers/
@@ -54,3 +55,4 @@ Role-based-authorization/
 ├── package-lock.json
 ├── README.md
 └── server.js
+```
